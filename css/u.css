@@ -11,6 +11,10 @@ html, body {
 	max-width: 100%
 }
 
+@media (min-width: 992px) {
+	
+}
+
 /*table {
 	background-image: url("../img/Profile_page.png");
 	background-position: center;
