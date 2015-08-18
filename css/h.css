@@ -1,0 +1,12 @@
+/*Hoverboard CSS*/
+table {
+	min-height:100%;
+	text-align: center;
+	width:100%;
+}
+
+body {
+	background-image: url("../img/pp2_bg.png");
+	background-size: cover;
+	min-height: 100%;
+}
