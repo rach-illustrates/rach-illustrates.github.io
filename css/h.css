@@ -1,12 +1,69 @@
 /*Hoverboard CSS*/
-table {
-	min-height:100%;
-	text-align: center;
-	width:100%;
+html, body {
+	height:100%;
+	position: relative;
 }
 
-body {
+#b-container {
 	background-image: url("../img/pp2_bg.png");
 	background-size: cover;
-	min-height: 100%;
+	height:100%;
+	margin:0 auto;
+	table-layout: fixed;
+	width:auto;
+}
+
+#b-container {
+	text-align: center;
+}
+
+.img-centred {
+	margin: auto;
+}
+
+#board {
+	position: relative;
+}
+
+#placeholder {
+	visibility: hidden;
+}
+
+table,
+#chassis,
+#propeller,
+#turbine,
+#gauge,
+#wings,
+#footholds {
+	position: absolute;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	background-size: contain;
+}
+
+#chassis {
+	z-index:1;
+}
+
+#propeller {
+	z-index:2;
+}
+
+#turbine {
+	z-index:3;
+}
+
+#gauge {
+	z-index:4;
+}
+
+#wings {
+	z-index:5;
+}
+
+#footholds {
+	z-index:6;
 }

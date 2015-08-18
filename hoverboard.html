@@ -22,37 +22,43 @@
 </head>
 <body class="main">
 
-<table>
+<table id="b-container">
 	<tr>
 		<td colspan="3">
-			Heading
+			<img class="img-responsive img-centred" src="img/board/title.png" alt="Choose your hoverboard" />
 		</td>
 	</tr>
 	<tr>
 		<td>
-			Chassis
+			<img data-target="#chassis" class="button img-responsive" src="img/board/Chasis_button.png" alt="Change the chassis">
 		</td>
 		<td>
-			Propeller
+			<img data-target="#propeller" class="button img-responsive" src="img/board/Propellers_button.png" alt="Change the propeller">
 		</td>
 		<td>
-			Turbine
+			<img data-target="#turbine" class="button img-responsive" src="img/board/Turbine_button.png" alt="Change the turbine">
 		</td>		
 	</tr>
 	<tr>
-		<td colspan="3">
-			Board image
+		<td colspan="3" id="board">
+			<img id="placeholder" class="img-responsive" src="img/board/Chasis_1.png" alt="Chassis">
+			<div id="chassis"></div>
+			<div id="propeller"></div>
+			<div id="turbine"></div>
+			<div id="gauge"></div>
+			<div id="wings"></div>
+			<div id="footholds"></div>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			Pressure gauge
+			<img data-target="#gauge" class="button img-responsive" src="img/board/Gauge_button.png" alt="Change the pressure gauge">
 		</td>
 		<td>
-			Wings
+			<img data-target="#wings" class="button img-responsive" src="img/board/Wings_button.png" alt="Change the wings">
 		</td>	
 		<td>
-			Footholds
+			<img data-target="#footholds" class="button img-responsive" src="img/board/Footholds_button.png" alt="Change the footholds">
 		</td>
 	</tr>
 </table>
@@ -61,5 +67,12 @@
 <script src="js/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/fastclick.js"></script>
+<script>
+	$(function() {
+    	FastClick.attach(document.body);
+	});
+</script>
+<script src="js/h.js"></script>
 </body>
 </html>
