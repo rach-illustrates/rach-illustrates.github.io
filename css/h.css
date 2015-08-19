@@ -1,16 +1,21 @@
 /*Hoverboard CSS*/
 html, body {
 	height:100%;
-	position: relative;
+	background-color: rgb(202,134,75);
+}
+
+.inline div {
+	float:left;
+	width:33%;
 }
 
 #b-container {
-	background-image: url("../img/pp2_bg.png");
-	background-size: cover;
 	height:100%;
 	margin:0 auto;
-	table-layout: fixed;
-	width:auto;
+	background-image: url("../img/board/Steam.png"), url("../img/board/Background.png");
+	background-size: contain, cover;
+	background-repeat: no-repeat, no-repeat;
+	background-position: center center, center center;
 }
 
 #b-container {
@@ -23,25 +28,28 @@ html, body {
 
 #board {
 	position: relative;
+	overflow: hidden;
 }
 
 #placeholder {
 	visibility: hidden;
 }
 
-table,
+#steam,
 #chassis,
 #propeller,
 #turbine,
 #gauge,
 #wings,
-#footholds {
+#footholds,
+#submit {
 	position: absolute;
 	top:0;
 	bottom:0;
 	right:0;
 	left:0;
 	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 #chassis {
@@ -66,4 +74,48 @@ table,
 
 #footholds {
 	z-index:6;
+}
+
+#submit {
+	background-image:url("../img/board/Submit_arrow.png");
+	top:auto;
+	left:auto;
+	height:40%;
+	margin-right: -10%;
+	width:40%;
+	z-index: 7;
+}
+
+#submit:hover {
+	background-image:url("../img/board/Submit_arrow_hover_state.png");
+}
+
+@media (min-width: 568px) {
+	#b-container {
+		max-width: 1500px;
+	}
+}
+
+@media (min-width: 768px) {
+	#b-container {
+		max-width: 1200px;
+	}
+}
+
+@media (min-width: 992px) {
+	#b-container {
+		max-width: 1000px;
+	}
+}
+
+@media (min-width: 1024px) {
+	#b-container {
+		max-width: 700px;
+	}
+}
+
+@media (min-width: 1280px) {
+	#b-container {
+		max-width: 700px;
+	}
 }

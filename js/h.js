@@ -41,6 +41,40 @@ $(document).ready(function(){
 		$(target).attr("style","background-image: url('" + imgPath +"')")
 	})
 
+	$("#submit").click(function(){
+		var getData = GetURLParameter("outfit")
+		var data = "?"
+		var addAmpersand = false
+		for(var key in images) {
+			if(addAmpersand)
+				data += "&"
+			else
+				addAmpersand = true
+
+			data += key + "=" + images[key].images[images[key].current]
+		}
+		data = data.replace(/#/g,"%23")
+		var pagePath = window.location.pathname.split("/")
+		pagePath.pop()
+		pagePath = pagePath.join("/")
+		var newURL = window.location.protocol + "//" + window.location.host + pagePath
+		window.location.href = newURL + "/thankyou.html" + data
+	})
+
 	//Pre-load base chassis
 	$("#chassis").attr("style","background-image: url('" + imgRoot + images["#chassis"].images[0] + "')")
 })
+
+function GetURLParameter(sParam)
+{
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++)
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam)
+        {
+            return sParameterName[1];
+        }
+    }
+}
