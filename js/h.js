@@ -42,16 +42,11 @@ $(document).ready(function(){
 	})
 
 	$("#submit").click(function(){
-		var getData = GetURLParameter("outfit")
-		var data = "?"
-		var addAmpersand = false
-		for(var key in images) {
-			if(addAmpersand)
-				data += "&"
-			else
-				addAmpersand = true
+		var getData = GetURLParameter("%23outfit")
+		var data = "?%23outfit=" + getData
 
-			data += key + "=" + images[key].images[images[key].current]
+		for(var key in images) {
+			data += "&" + key + "=" + images[key].images[images[key].current]
 		}
 		data = data.replace(/#/g,"%23")
 		var pagePath = window.location.pathname.split("/")

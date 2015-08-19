@@ -20,38 +20,56 @@
 		<![endif]-->
 </head>
 <body class="main">
-
+	<div id="home">
+		<a href="index.html">
+			<img class="img-responsive initial" src="img/Home_arrow.png" />
+			<img class="img-responsive hover" src="img/Home_arrow_hover_state.png" />
+		</a>
+	</div>
+	<div id="submit">
+		<a href="index.html">
+			<img class="img-responsive disabled initial" src="img/Submit_arrow.png" />
+			<img class="img-responsive disabled hover" src="img/Submit_arrow_hover_state.png" />
+		</a>
+	</div>	
+<div id="popup">
+	<div id="popup-hover"></div>
+	<div class="popup-image hidden" id="ballerina"></div>
+	<div class="popup-image hidden" id="big_daddy"></div>
+	<div class="popup-image hidden" id="chun_li"></div>
+	<div class="popup-image hidden" id="nun"></div>
+	<div class="popup-image hidden" id="powergirl"></div>
+	<div class="popup-image hidden" id="sexy_work_gear"></div>
+	<div class="popup-image hidden" id="dress"></div>
+</div>
 <div class="carousel-wrapper">
 	<!-- Character select carousel -->
 	<div id="choose-outfit" class="carousel fade" data-ride="carousel" data-interval="false">
-		<!-- Indicators
-		<ol class="carousel-indicators">
-			<li data-target="#choose-outfit" data-slide-to="0" class="active"></li>
-			<li data-target="#choose-outfit" data-slide-to="1"></li>
-			<li data-target="#choose-outfit" data-slide-to="2"></li>
-			<li data-target="#choose-outfit" data-slide-to="3"></li>
-			<li data-target="#choose-outfit" data-slide-to="4"></li>
-			<li data-target="#choose-outfit" data-slide-to="5"></li>
-			<li data-target="#choose-outfit" data-slide-to="6"></li>
-			<li data-target="#choose-outfit" data-slide-to="7"></li>
-			<li data-target="#choose-outfit" data-slide-to="8"></li>
-		</ol>
-		-->
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner" role="listbox">
 			<div class="item-background"></div>
 
-			<div class="item active"></div>
-			<div class="item slide-2"></div>
-			<div class="item slide-3"></div>
-			<div class="item slide-4"></div>
-			<div class="item slide-5"></div>
-			<div class="item slide-6"></div>
-			<div class="item slide-7"></div>
-			<div class="item slide-8"></div>
-			<div class="item slide-9"></div>
-			<div class="item slide-10"></div>
-			<div class="item slide-11"></div>
+			<div class="item none active"></div>
+			<!-- Work gear 1 -->
+			<div class="item slide-2" data-action="submit" data-image="Work_gear_1"></div>
+			<!-- Ballerina -->
+			<div class="item slide-3" data-action="fail" data-popup="#ballerina"></div>
+			<!-- Big daddy -->
+			<div class="item slide-4" data-action="fail" data-popup="#big_daddy"></div>
+			<!-- Nun -->
+			<div class="item slide-5" data-action="fail" data-popup="#nun"></div>
+			<!-- Power girl -->
+			<div class="item slide-6" data-action="fail" data-popup="#powergirl"></div>
+			<!-- Sexy outfit -->
+			<div class="item slide-7" data-action="fail" data-popup="#sexy_work_gear"></div>
+			<!-- Burlesque Steampunk -->
+			<div class="item slide-8" data-action="fail" data-popup="#dress"></div>
+			<!-- Chun Li -->
+			<div class="item slide-9" data-action="fail" data-popup="#chun_li"></div>
+			<!-- Work gear 2 -->
+			<div class="item slide-10" data-action="submit" data-image="Work_gear_2"></div>
+			<!-- Work gear 3 -->
+			<div class="item slide-11" data-action="submit" data-image="Work_gear_3"></div>
 		</div>
 
 		<!-- Controls -->
@@ -72,5 +90,6 @@
 <script src="js/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/c.js"></script>
 </body>
 </html>

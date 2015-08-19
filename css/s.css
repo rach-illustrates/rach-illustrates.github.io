@@ -423,3 +423,125 @@ body, p, a, h1, h2, h3, h4, h5 {
 .slide-11 {
 	background:url('../img/Alt_work_gear_2.png');
 }
+
+#home,
+#submit {
+	position: absolute;
+	width:20%;
+	top:50%;
+	bottom:50%;
+	margin-top:-58%;
+	left:5%;
+	height: auto;
+	z-index: 10;
+	max-width: 150px;
+	max-height: 100px;
+}
+
+#submit {
+	left:auto;
+	right:5%;
+}
+
+@media (min-width: 586px) {
+	#submit,
+	#home {
+		margin-top:20px;
+		top:0;
+		bottom:0;
+	}
+}
+
+#submit:hover .hover,
+#home:hover .hover {
+	display: block;
+}
+
+#submit:hover .disabled.hover,
+#submit:hover .initial,
+#submit .hover,
+#home:hover .initial,
+#home .hover {
+	display: none;
+}
+
+.disabled {
+	cursor: default;
+}
+
+
+#submit .disabled.initial {
+	display: block;
+	opacity: 0.5;
+}
+
+#popup,
+.popup-image,
+#popup-hover {
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background-color:rgba(0,0,0,0.5);
+	z-index: 11;
+}
+
+#popup-hover,
+#popup-hover:hover,
+.popup-image {
+	background:transparent;
+	background-image: url("../img/Pop-ups/Arrow_hover_state.png");
+	z-index: 12;
+	background-position:center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: 1;
+	margin:12%;
+}
+
+#popup-hover {
+	z-index: 13;
+	background-image: none;
+}
+
+#popup-hover:hover {
+	z-index: 13;
+	background-image: url("../img/Pop-ups/Arrow_hover_state.png");
+}
+
+.popup-image.hidden,
+#popup {
+	display: none;
+}
+
+#popup.show {
+	display: block;
+}
+
+#ballerina {
+	background-image:url("../img/Pop-ups/Ballerina_popup.png");
+}
+
+#big_daddy {
+	background-image:url("../img/Pop-ups/Big_Daddy_popup.png");
+}
+#chun_li {
+	background-image:url("../img/Pop-ups/Chun_Li_popup.png");
+}
+
+#nun {
+	background-image:url("../img/Pop-ups/Nuns_habit_popup.png");
+}
+
+#powergirl {
+	background-image:url("../img/Pop-ups/PowerGirl_popup.png");
+}
+
+#sexy_work_gear {
+	background-image:url("../img/Pop-ups/Sexy_Work_gear_popup.png");
+}
+
+#dress {
+	background-image:url("../img/Pop-ups/Steampunk_dress_popup.png");
+}
