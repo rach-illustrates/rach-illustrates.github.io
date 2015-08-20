@@ -4,28 +4,6 @@ html, body {
 	background-color: rgb(202,134,75);
 }
 
-.inline div {
-	float:left;
-	width:33%;
-}
-
-#b-container {
-	height:100%;
-	margin:0 auto;
-	background-image: url("../img/board/Steam.png"), url("../img/board/Background.png");
-	background-size: contain, cover;
-	background-repeat: no-repeat, no-repeat;
-	background-position: center center, center center;
-}
-
-#b-container {
-	text-align: center;
-}
-
-.img-centred {
-	margin: auto;
-}
-
 #board {
 	position: relative;
 	overflow: hidden;
@@ -41,8 +19,7 @@ html, body {
 #turbine,
 #gauge,
 #wings,
-#footholds,
-#submit {
+#footholds {
 	position: absolute;
 	top:0;
 	bottom:0;
@@ -76,41 +53,76 @@ html, body {
 	z-index:6;
 }
 
-#submit {
-	background-image:url("../img/board/Submit_arrow.png");
-	top:auto;
-	left:auto;
-	height:40%;
-	margin-right: -10%;
-	width:40%;
+#hover-state {
 	z-index: 7;
 }
 
-#submit:hover {
-	background-image:url("../img/board/Submit_arrow_hover_state.png");
-}
-
-.title_row,
-.title_row td {
-	height:10%;
-}
-
-.title_row td {
-	width:100%;
-}
-
-.control_row,
-.control_row td {
-	height:20%;
-}
-
-.control_row td {
-	width: 33%;
-}
-
+.button,
+.board-el,
 .title_row td,
 .button {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+
+#chassis-btn,
+#propeller-btn,
+#turbine-btn,
+#gauge-btn,
+#wings-btn,
+#footholds-btn,
+.button,
+.board-el {
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+
+#placeholder.show {
+	visibility: visible;
+}
+
+#chassis-btn {
+	right: 66%;
+	bottom:50%;
+}
+
+#propeller-btn {
+	left:33%;
+	right:33%;
+	bottom:50%;
+}
+
+#turbine-btn {
+	left:66%;
+	bottom:50%;
+}
+
+#gauge-btn {
+	right: 66%;
+	top:50%;
+}
+
+#wings-btn {
+	left:33%;
+	right:33%;	
+	top:50%;
+}
+
+#footholds-btn {
+	left:66%;	
+	top:50%;
+}
+
+.button {
+	z-index: 8;
+}
+
+#submit,
+#home {
+	z-index: 9;
 }

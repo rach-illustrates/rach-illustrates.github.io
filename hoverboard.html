@@ -22,34 +22,37 @@
 </head>
 <body class="main">
 
-<table id="b-container">
-	<tr class="title_row">
-		<td colspan="3" style="background-image:url('img/board/title.png')"></td>
-	</tr>
-	<tr>
-		<td data-target="#chassis" class="button" style="background-image:url('img/board/Chasis_button.png')"></td>
-		<td data-target="#propeller" class="button" style="background-image:url('img/board/Propellers_button.png')"></td>
-		<td data-target="#turbine" class="button" style="background-image:url('img/board/Turbine_button.png')"></td>		
-	</tr>
-	<tr class="control_row">
-		<td colspan="3" id="board">
-			<div id="steam"></div>
-			<img id="placeholder" class="img-responsive" src="img/board/Instructions.png" alt="Instructions">
-			<div id="chassis"></div>
-			<div id="propeller"></div>
-			<div id="turbine"></div>
-			<div id="gauge"></div>
-			<div id="wings"></div>
-			<div id="footholds"></div>
-			<div id="submit"></div>
-		</td>
-	</tr>
-	<tr class="control_row">
-		<td data-target="#gauge" class="button" style="background-image:url('img/board/Gauge_button.png')"></td>
-		<td data-target="#wings" class="button" style="background-image:url('img/board/Wings_button.png')"></td>	
-		<td data-target="#footholds" class="button" style="background-image:url('img/board/Footholds_button.png')"></td>
-	</tr>
-</table>
+	<div id="home">
+		<a href="about.html">
+			<img class="img-responsive initial" src="img/Home_arrow.png" />
+			<img class="img-responsive hover" src="img/Home_arrow_hover_state.png" />
+		</a>
+	</div>
+	<div id="submit">
+		<a>
+			<img class="img-responsive disabled initial" src="img/Submit_arrow.png" />
+			<img class="img-responsive disabled hover" src="img/Submit_arrow_hover_state.png" />
+		</a>
+	</div>
+
+<div id="hoverboard-container"></div>
+
+<div id="chassis-btn" data-hover="Chasis" data-target="#chassis" class="button"></div>
+<div id="propeller-btn" data-hover="Propellers" data-target="#propeller" class="button"></div>
+<div id="turbine-btn" data-hover="Turbine" data-target="#turbine" class="button"></div>		
+<div id="gauge-btn" data-hover="Gauge" data-target="#gauge" class="button"></div>
+<div id="wings-btn" data-hover="Wings" data-target="#wings" class="button"></div>	
+<div id="footholds-btn" data-hover="Footholds" data-target="#footholds" class="button"></div>
+
+<div id="hover-state" class="board-el"></div>
+<div id="background" class="board-el" style="background-image:url('img/board/Background_full.png')"></div>
+<div id="placeholder" class="board-el show" style="background-image:url('img/board/Instructions.png')"></div>
+<div id="chassis" class="board-el"></div>
+<div id="propeller" class="board-el"></div>
+<div id="turbine" class="board-el"></div>
+<div id="gauge" class="board-el"></div>
+<div id="wings" class="board-el"></div>
+<div id="footholds" class="board-el"></div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>

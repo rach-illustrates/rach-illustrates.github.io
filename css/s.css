@@ -380,10 +380,6 @@ body, p, a, h1, h2, h3, h4, h5 {
 	background:url('../img/Background_pg2.png');
 }
 
-.item-background {
-	background:url('../img/Body.png');
-}
-
 .slide-2 {
 	background:url('../img/Work_Gear.png');
 }
@@ -603,6 +599,7 @@ body, p, a, h1, h2, h3, h4, h5 {
 	position: absolute;
 	bottom:0;
 	right:0;
+	left:50%;
 }
 
 @media (min-width: 586px) {
