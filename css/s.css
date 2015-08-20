@@ -545,3 +545,71 @@ body, p, a, h1, h2, h3, h4, h5 {
 #dress {
 	background-image:url("../img/Pop-ups/Steampunk_dress_popup.png");
 }
+
+#about,
+.about,
+#splash {
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#splash {
+	background-image: url("../img/splash/Title_Page.png");
+}
+
+.bg-blue {
+	background-color: rgb(240,228,207);
+}
+
+#about {
+	background-image: url("../img/Thanks/Final_page_background.png");
+}
+
+#pp3_title {
+	background-image: url("../img/pp2/pp3_title.png");
+}
+
+#pp3_top_cogs {
+	background-image: url("../img/pp2/pp3_top_cogs.png");
+}
+
+#pp3_bottom_cogs {
+	background-image: url("../img/pp2/pp3_bottom_cogs.png");
+}
+
+#pp3_words {
+	background-image: url("../img/pp2/pp3_words.png");
+}
+
+#pp3_arrow_hover {
+	background-image: url("../img/pp2/pp3_arrow_hover.png");
+	visibility: hidden;
+}
+
+#pp3_arrow_hover.show {	
+	visibility: visible;
+}
+
+#click {
+	width:50%;
+	height:40%;
+	margin-bottom:10%;
+	position: absolute;
+	bottom:0;
+	right:0;
+}
+
+@media (min-width: 586px) {
+	#click {
+		margin-right:10%;
+		width:40%;
+		height:50%;
+		margin-bottom:0;
+	}
+}
