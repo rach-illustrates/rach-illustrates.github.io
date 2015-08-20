@@ -64,7 +64,7 @@ body,
  }
 
  #steam {
- 	background-image:url("../img/thanks/steam.png");
+ 	background-image:url("../img/thanks/Steam.png");
  	z-index: 1;
  }
 
@@ -99,4 +99,8 @@ body,
 
  #outfit {
  	z-index: 9;
+ }
+
+ #thanks {
+ 	display: none;
  }
