@@ -39,12 +39,18 @@
 		<div id="wings" class="element"></div>
 	</div>
 
-	<div id="form">
-		<input type="text" placeholder="Enter your name" name="name">
-		<input type="text" placeholder="Enter your email" name="email">
-		<input type="text" placeholder="Enter any comments" name="comments">
-		<button>Submit</button>
+	<form id="form">
+		<input type="text" class="form-item" placeholder="Enter your name" name="name">
+		<input type="text" class="form-item" placeholder="Enter your email" name="email">
+		<input type="text" class="form-item" placeholder="Enter any comments" name="comments">
 	</div>
+
+	<div id="submit">
+		<a>
+			<img class="img-responsive disabled initial" src="img/Submit_arrow.png" />
+			<img class="img-responsive disabled hover" src="img/Submit_arrow_hover_state.png" />
+		</a>
+	</div>	
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="js/jquery.min.js"></script>

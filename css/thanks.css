@@ -7,6 +7,7 @@ body,
 	height: 100%;
 }
 
+#submit,
 #home {
 	position: absolute;
 	width:20%;
@@ -50,6 +51,7 @@ body,
  	z-index: 0;
  }
 
+#form,
  .element {
  	position: absolute;
  	top:0;
@@ -101,6 +103,51 @@ body,
  	z-index: 9;
  }
 
- #thanks {
- 	display: none;
+ #form {
+ 	top:80%;
+ 	height:10%;
+ 	text-align: center;
  }
+
+ .form-item {
+ 	display: block;
+ 	padding:5px;
+ 	margin:10px auto;
+ 	max-width: 400px;
+ 	width:100%;
+ }
+
+#submit {
+	left:auto;
+	right:5%;
+	margin-top:auto;
+	top:auto;
+	bottom:0;
+}
+
+#submit:hover .hover {
+	display: block;
+}
+
+#submit:hover .disabled.hover,
+#submit:hover .initial,
+#submit .hover {
+	display: none;
+}
+
+.disabled {
+	cursor: default;
+}
+
+
+#submit .disabled.initial {
+	display: block;
+	opacity: 0.5;
+}
+
+@media (min-width: 586px) {
+	#submit {
+		margin-bottom:20px;
+		bottom:5px;
+	}
+}

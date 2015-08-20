@@ -4,7 +4,28 @@ $(document).ready(function(){
 	for(var key in images) {
 		$(key).attr("style","background-image:url('img/thanks/" + images[key] + "')")
 	}
-	
+
+	$(".form-item").keyup(function(){
+		var inputs = $(".form-item")
+		var formData = ""
+		for(var x = 0; x < inputs.length; x++) {
+			if(inputs[x].value === "") {
+				$("#submit .img-responsive").addClass("disabled")
+				return
+			}
+		}
+		$("#submit .img-responsive").removeClass("disabled")
+	})
+
+	$("#submit").click(function(){
+		if($(this).hasClass("disabled"))
+			return
+
+		$.post("http://rach-illustrates.com/post.php",$("#form").serialize())
+
+		$("#submit .img-responsive").addClass("disabled")
+		$("#form").html("<h1>Thanks for your feedback!</h1>")
+	})
 })
 
 function getParams() {
