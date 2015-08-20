@@ -90,32 +90,27 @@ html, body {
 	background-image:url("../img/board/Submit_arrow_hover_state.png");
 }
 
-@media (min-width: 568px) {
-	#b-container {
-		max-width: 1500px;
-	}
+.title_row,
+.title_row td {
+	height:10%;
 }
 
-@media (min-width: 768px) {
-	#b-container {
-		max-width: 1200px;
-	}
+.title_row td {
+	width:100%;
 }
 
-@media (min-width: 992px) {
-	#b-container {
-		max-width: 1000px;
-	}
+.control_row,
+.control_row td {
+	height:20%;
 }
 
-@media (min-width: 1024px) {
-	#b-container {
-		max-width: 700px;
-	}
+.control_row td {
+	width: 33%;
 }
 
-@media (min-width: 1280px) {
-	#b-container {
-		max-width: 700px;
-	}
+.title_row td,
+.button {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }

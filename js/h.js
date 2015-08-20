@@ -55,9 +55,6 @@ $(document).ready(function(){
 		var newURL = window.location.protocol + "//" + window.location.host + pagePath
 		window.location.href = newURL + "/thankyou.html" + data
 	})
-
-	//Pre-load base chassis
-	$("#chassis").attr("style","background-image: url('" + imgRoot + images["#chassis"].images[0] + "')")
 })
 
 function GetURLParameter(sParam)

@@ -23,26 +23,18 @@
 <body class="main">
 
 <table id="b-container">
-	<tr>
-		<td colspan="3">
-			<img class="img-responsive img-centred" src="img/board/title.png" alt="Choose your hoverboard" />
-		</td>
+	<tr class="title_row">
+		<td colspan="3" style="background-image:url('img/board/title.png')"></td>
 	</tr>
 	<tr>
-		<td>
-			<img data-target="#chassis" class="button img-responsive" src="img/board/Chasis_button.png" alt="Change the chassis">
-		</td>
-		<td>
-			<img data-target="#propeller" class="button img-responsive" src="img/board/Propellers_button.png" alt="Change the propeller">
-		</td>
-		<td>
-			<img data-target="#turbine" class="button img-responsive" src="img/board/Turbine_button.png" alt="Change the turbine">
-		</td>		
+		<td data-target="#chassis" class="button" style="background-image:url('img/board/Chasis_button.png')"></td>
+		<td data-target="#propeller" class="button" style="background-image:url('img/board/Propellers_button.png')"></td>
+		<td data-target="#turbine" class="button" style="background-image:url('img/board/Turbine_button.png')"></td>		
 	</tr>
-	<tr>
+	<tr class="control_row">
 		<td colspan="3" id="board">
 			<div id="steam"></div>
-			<img id="placeholder" class="img-responsive" src="img/board/Chasis_1.png" alt="Chassis">
+			<img id="placeholder" class="img-responsive" src="img/board/Instructions.png" alt="Instructions">
 			<div id="chassis"></div>
 			<div id="propeller"></div>
 			<div id="turbine"></div>
@@ -52,16 +44,10 @@
 			<div id="submit"></div>
 		</td>
 	</tr>
-	<tr>
-		<td>
-			<img data-target="#gauge" class="button img-responsive" src="img/board/Gauge_button.png" alt="Change the pressure gauge">
-		</td>
-		<td>
-			<img data-target="#wings" class="button img-responsive" src="img/board/Wings_button.png" alt="Change the wings">
-		</td>	
-		<td>
-			<img data-target="#footholds" class="button img-responsive" src="img/board/Footholds_button.png" alt="Change the footholds">
-		</td>
+	<tr class="control_row">
+		<td data-target="#gauge" class="button" style="background-image:url('img/board/Gauge_button.png')"></td>
+		<td data-target="#wings" class="button" style="background-image:url('img/board/Wings_button.png')"></td>	
+		<td data-target="#footholds" class="button" style="background-image:url('img/board/Footholds_button.png')"></td>
 	</tr>
 </table>
 
