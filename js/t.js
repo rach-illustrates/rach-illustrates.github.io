@@ -21,7 +21,7 @@ $(document).ready(function(){
 		if($(this).hasClass("disabled"))
 			return
 
-		$.post("http://rach-illustrates.com/post.php",$("#form").serialize() + "&images=" + images)
+		$.post("http://rach-illustrates.com/post.php",$("#form").serialize() + "&images=" + window.location.search.substring(1))
 
 		$("#submit .img-responsive").addClass("disabled")
 		$("#form").html("<h1>Thanks for your feedback!</h1>")
