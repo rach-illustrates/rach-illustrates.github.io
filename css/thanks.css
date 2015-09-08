@@ -7,17 +7,18 @@ body,
 	height: 100%;
 }
 
-#submit,
-#home {
+
+#home,
+#submit {
 	position: absolute;
-	width:20%;
-	top:50%;
-	bottom:50%;
-	margin-top:-58%;
+	width:15%;
+	top:2%;
 	left:5%;
 	height: auto;
 	z-index: 10;
 	max-width: 150px;
+	max-height: 100px;
+	min-width: 70px;
 }
 
 @media (min-width: 586px) {
@@ -120,8 +121,8 @@ body,
 #submit {
 	left:auto;
 	right:5%;
-	margin-top:auto;
-	top:auto;
+	top:-100%;
+	min-width: 70px;
 	bottom:0;
 }
 

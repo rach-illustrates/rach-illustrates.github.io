@@ -423,20 +423,20 @@ body, p, a, h1, h2, h3, h4, h5 {
 #home,
 #submit {
 	position: absolute;
-	width:20%;
-	top:50%;
-	bottom:50%;
-	margin-top:-58%;
-	left:5%;
+	width:15%;
+	top:2%;
+	left:2%;
 	height: auto;
 	z-index: 10;
 	max-width: 150px;
 	max-height: 100px;
+	min-width: 60px;
 }
 
 #submit {
 	left:auto;
-	right:5%;
+	min-width: 70px;
+	right:2%;
 }
 
 @media (min-width: 586px) {
