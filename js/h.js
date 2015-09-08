@@ -61,6 +61,9 @@ $(document).ready(function(){
 	})
 
 	$("#submit").click(function(){
+		if($("#submit img.disabled").length !== 0)
+			return
+		
 		var getData = GetURLParameter("%23outfit")
 		var data = "?%23outfit=" + getData
 
