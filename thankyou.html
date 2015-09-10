@@ -63,5 +63,27 @@
 	    	FastClick.attach(document.body);
 		});
 	</script>	
+	<script>
+	//Kiosk mode - redirect to index after 5mins
+	console.log("set")
+	var timer = setTimeout(redirect,(1000 * 60 * 5))
+
+	$("body,html").bind("touchstart mousemove touchmove scroll mousedown DOMMouseScroll mousewheel keyup", function(e){
+		console.log("reset")
+	    clearTimeout(timer)
+	    timer = setTimeout(redirect,(1000 * 60 * 5))
+	});
+
+	function redirect(){
+			//Build page path
+			var pagePath = window.location.pathname.split("/")
+			pagePath.pop()
+			pagePath = pagePath.join("/")
+			var newURL = window.location.protocol + "//" + window.location.host + pagePath
+
+			//Redirect with query string
+			window.location.href = newURL + "/index.html"
+	}
+	</script>
 </body>
 </html>
